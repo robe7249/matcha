@@ -1,0 +1,437 @@
+body{
+    background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
+}
+* {
+    margin: 0;
+}
+
+.fixed-header{
+    position: fixed;
+    top: 0; /* con esto le decimos que se coloque arriba*/
+  left: 0;  /*con esto le decimos que se coloque a la izquierda*/
+  right: 0; /*con esto le decimos que se extienda hasta el borde derecho*/
+  background-color: #fffbf7; /*le ponemos el mismo color de la pagina para que no se sobre pongan los textos en la barra de tareas*/
+}
+
+.header{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+
+.actions a{
+margin: 10px;
+}
+
+.header >* {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;  /*con esto se alinea la imagen matcha*/
+    height: 100%;
+    line-height: 30px; /*que tan alejado del la linea de arriba de la pagina web*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.navbar {
+    text-align: center;
+   /* width: 77%;  /*espacio que ocupara el menu list*/
+    color: #025157;
+    font-weight: 500; /* que tan oscura la letra*/
+    background-color: #fffbf7;
+  }
+
+.menu-item{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+       }
+
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+    height: 50px;
+}
+.actions a {
+    color: #67b54b;
+}
+
+main h1{
+    font-size: 30px;
+}
+
+h1,h4{
+    text-align: center;
+}
+
+h1{
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+
+h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+ button{
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px 20px;
+    margin-left: -10px; /*esto hace que quede encima del input*/
+    height: 100%;
+}
+
+ input{
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+    padding: 6px 30px;
+    width: 10%; /*ancho del input creceria el 90% de la fila*/ 
+    max-width: 250px; /*Limita la anchura maxima de los elementos del bloque*/
+}
+
+main form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main{
+    margin-top: 200px; /*con esto se da el margen a la seccion main para la barra de taras no tape los primeros h1*/
+}
+
+main p{
+    color: #8b8b8b;
+    text-align: center;
+}
+
+.banner{
+   text-align: center;
+}
+
+.intro img{
+    display: block;  /*asi se convierte la imagen a bloque para despues poderla centrar con los margenes*/
+    margin: auto;  /*permite centrar la imagen*/
+height: auto;
+width: 50%;
+}
+
+
+.publish{
+    flex: 1;  /*con esto decimos que todos los elementos del publis deben ocupar el mismo espacio a lo ancho*/
+}
+
+.promo{
+    display: flex;
+    width: 60%;
+    margin: 100px auto;  /*equivale a poner 15% de espacio a cada lado porque estabamos ocupando el 70%*/
+    align-items: center;
+}
+
+.explanatory-video{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+.publish h3{
+    font-family: "Alegreya", serif;
+    font-size: 25px;
+    line-height: 1.2px;  /* espacio entre los renglones de letras*/
+    color: #025157;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.signup-form input{
+    width: 25%;
+  }
+
+
+.features{
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr); /* esto hace las filas y columnas al mismo tiempo*/
+    /*grid-template-columns: repeat(4,300px) esto dice 4 columnas de 300px*/ 
+    /*grid-template-columns: 500px 1fr  /*Esto hace una columna de 500px y otra lo que le sobra del ancho de la pagina web*/
+   /* grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(2,330px);*/
+}
+
+.feature-card{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;  /*revisar que hace este campo*/
+}
+
+.features .feature-card .feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+  }
+  .features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  .features .feature-card .feature-content img {
+    width: 50px;
+  }
+  .features .feature-card .feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+  }
+  .features .feature-card .feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+  }
+  .features .feature-card .feature-content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .features .feature-card .feature-image {
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+  }
+  .features .feature-card .feature-image figure,
+  .features .feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
+  }
+
+  
+.card-container {
+  background-color: #a1d683;
+  padding: 35px;
+}
+
+.comments {
+  text-align: left;
+}
+
+.comments h1 {
+  color: #025157;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Alegreya", serif;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 61px;
+  letter-spacing: -2px;
+  color: #025157;
+}
+
+.comments .btn-beefy {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 12px;
+  text-align: center;
+  color: #fff;
+  background: #025157;
+  border-radius: 8px;
+  height: 45px;
+  width: 166px;
+  transition: all .2s ease-in-out;
+}
+
+.comments .btn-beefy:hover {
+  background-color: #67b54b;
+  color: #fff;
+}
+
+.comments img {
+  width: 450px;
+  margin-top: 40px;
+  padding-right: 10px;
+}
+
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+.success-stories .stories-carousel .carousel-indicators {
+  position: initial; /** รณ: position: static; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;  /* manda 15 posiciones hacia arriba el contenido*/
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.success-stories .stories-carousel .card {
+  width: 80%;
+  /* cambiar a responsive */
+  background-color: #fff;
+  border-radius: 10px;
+  height: 564px;
+  color : #025157;
+  position: relative;
+}
+
+.success-stories .stories-carousel .card .everly {
+  background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png');
+  height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.success-stories .stories-carousel .card .card-circle-everly {
+  position: absolute;
+  bottom: 255px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f9da73;
+  background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5px;
+  border: 5px solid #f9da73;
+}
+
+    .how-does-it-work .steps{
+        margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+  .how-does-it-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+  
+/*esto es para un jquery, para valores menores a 425px no muestra navbar ni actions*/
+@media(max-width: 426px){
+
+    /*Con esto ocultamos el navbar para elementos menores a 426px*/
+    /* .navbar, .actions{ 
+    display: none;
+    } */
+
+    main h1{
+        font-size: 20px;
+    }
+    .banner > img{
+        width: 100%;
+    }
+
+    .promo{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .explanatory-video >video{
+        width: 100%;
+    }
+
+    .publish {
+        margin-top:10px ;
+    }
+    .publish > h3{
+        font-size: 25px;
+        line-height: 1.2;
+        }
+
+    .publish > form{
+        flex-direction: column;
+    }
+    /* al elemento div que esta dentro de form que esta dentro de publish*/
+    /*
+    .publish > form > div
+        height: 200px;
+    }*/
+
+    .signup-form {
+    height: 50px;
+    margin-top: 10px;
+    }
+
+    .signup-form > input{
+        width: 40%;
+    }
+
+    .features {
+        grid-template: repeat(4,1fr)/ 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feature-image {
+        display: none; /*con esto quitamos las imagenes del features*/
+    }
+
+}
+
+
+
+
